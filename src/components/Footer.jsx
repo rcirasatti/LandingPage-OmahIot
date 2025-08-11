@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="text-center lg:text-left">
               <div className="h-8 mb-2">
                 <img
-                  src="/logo_omahiot.png"
+                  src="${import.meta.env.BASE_URL}images/logo_omahiot.png"
                   alt="OmahIoT Logo"
                   className="h-full w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
                 />

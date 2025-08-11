@@ -64,7 +64,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="h-8 hover:scale-105 transition-transform duration-300 cursor-pointer">
             <img
-              src="/logo_omahiot.png"
+              src="${import.meta.env.BASE_URL}images/logo_omahiot.png"
               alt="OmahIoT"
               className="h-full w-auto object-contain"
             />

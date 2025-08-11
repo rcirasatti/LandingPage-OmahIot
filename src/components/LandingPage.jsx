@@ -17,42 +17,42 @@ const LandingPage = () => {
     {
       title: "MOKO",
       description: "MOKO memudahkan pengelolaan kolam koi",
-      image: "/koi1-1.png",
+      image: "${import.meta.env.BASE_URL}images/koi1-1.png",
     },
     {
       title: "AUTOFEEDER",
       description: "Meningkatkan kualitas berbagai jenis ikan",
-      image: "/autofeeder1-1.png",
+      image: "${import.meta.env.BASE_URL}images/autofeeder1-1.png",
     },
     {
       title: "MONIK",
       description: "MONIK memudahkan pengelolaan greenhouse",
-      image: "/hidroponik1-1.png",
+      image: "${import.meta.env.BASE_URL}images/hidroponik1-1.png",
     },
     {
       title: "MOBAN",
       description: "MOBAN membantu memantau curah hujan di tempat yang rawan.",
-      image: "/monitoringhujan.png",
+      image: "${import.meta.env.BASE_URL}images/monitoringhujan.png",
     },
     {
       title: "MANIS",
       description: "MANIS memudahkan pengelolaan lahan pertanian.",
-      image: "/penyiraman1-1.png",
+      image: "${import.meta.env.BASE_URL}images/penyiraman1-1.png",
     },
     {
       title: "MOCKA",
       description: "MOCKA untuk kandang ayam closed house dan konvensional",
-      image: "/kandangayam1-1.png",
+      image: "${import.meta.env.BASE_URL}images/kandangayam1-1.png",
     },
     {
       title: "WEBSITE",
       description: "Jasa pembuatan custom website",
-      image: "/website.png",
+      image: "${import.meta.env.BASE_URL}images/website.png",
     },
     {
       title: "ANDROID",
       description: "Jasa pembuatan custom android",
-      image: "/androidd.png",
+      image: "${import.meta.env.BASE_URL}images/androidd.png",
     },
   ];
 
@@ -275,7 +275,7 @@ const LandingPage = () => {
               <div className="absolute inset-0 bg-primary/10 rounded-lg transform rotate-3 scale-105"></div>
               <div className="relative bg-card rounded-lg p-4 shadow-lg">
                 <img
-                  src="/omah-iot1.png"
+                  src="${import.meta.env.BASE_URL}images/omah-iot1.png"
                   alt="About Us"
                   className="w-full h-auto rounded-lg"
                 />
