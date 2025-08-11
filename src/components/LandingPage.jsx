@@ -17,42 +17,42 @@ const LandingPage = () => {
     {
       title: "MOKO",
       description: "MOKO memudahkan pengelolaan kolam koi",
-      image: "${import.meta.env.BASE_URL}images/koi1-1.png",
+      image: "${import.meta.env.BASE_URL}/images/koi1-1.png",
     },
     {
       title: "AUTOFEEDER",
       description: "Meningkatkan kualitas berbagai jenis ikan",
-      image: "${import.meta.env.BASE_URL}images/autofeeder1-1.png",
+      image: "${import.meta.env.BASE_URL}/images/autofeeder1-1.png",
     },
     {
       title: "MONIK",
       description: "MONIK memudahkan pengelolaan greenhouse",
-      image: "${import.meta.env.BASE_URL}images/hidroponik1-1.png",
+      image: "${import.meta.env.BASE_URL}/images/hidroponik1-1.png",
     },
     {
       title: "MOBAN",
       description: "MOBAN membantu memantau curah hujan di tempat yang rawan.",
-      image: "${import.meta.env.BASE_URL}images/monitoringhujan.png",
+      image: "${import.meta.env.BASE_URL}/images/monitoringhujan.png",
     },
     {
       title: "MANIS",
       description: "MANIS memudahkan pengelolaan lahan pertanian.",
-      image: "${import.meta.env.BASE_URL}images/penyiraman1-1.png",
+      image: "${import.meta.env.BASE_URL}/images/penyiraman1-1.png",
     },
     {
       title: "MOCKA",
       description: "MOCKA untuk kandang ayam closed house dan konvensional",
-      image: "${import.meta.env.BASE_URL}images/kandangayam1-1.png",
+      image: "${import.meta.env.BASE_URL}/images/kandangayam1-1.png",
     },
     {
       title: "WEBSITE",
       description: "Jasa pembuatan custom website",
-      image: "${import.meta.env.BASE_URL}images/website.png",
+      image: "${import.meta.env.BASE_URL}/images/website.png",
     },
     {
       title: "ANDROID",
       description: "Jasa pembuatan custom android",
-      image: "${import.meta.env.BASE_URL}images/androidd.png",
+      image: "${import.meta.env.BASE_URL}/images/androidd.png",
     },
   ];
 
