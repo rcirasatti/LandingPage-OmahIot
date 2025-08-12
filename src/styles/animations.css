@@ -37,6 +37,15 @@
   }
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -77,6 +86,43 @@
 .animate-fade-in-delay-2 {
   opacity: 0;
   animation: fadeIn 1s ease-out 0.6s forwards;
+}
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* Exactly half to ensure perfect loop */
+  }
+}
+
+.animate-scroll-slow {
+  animation: scroll 90s linear infinite;
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 60s linear infinite;
+  will-change: transform;
+}
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hover\:pause-animation:hover,
+.hover\:pause-animation:hover .animate-infinite-scroll,
+.hover\:pause-animation:hover .animate-scroll-slow,
+.hover\:pause-animation:hover * {
+  animation-play-state: paused !important;
+}
+
+.logos-slide {
+  display: flex;
+  width: fit-content;
+  gap: 0; /* Remove gap to ensure no space between logos */
+  padding: 0; /* Remove padding to ensure perfect loop */
 }
 
 .pattern-grid {
