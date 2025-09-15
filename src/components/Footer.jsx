@@ -5,10 +5,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-gradient-to-br from-[#2C3A2F] via-[#4A6741] to-[#2C3A2F] pt-8 pb-4 relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-[hsl(210,72%,25%)] via-[hsl(148,41%,58%)] to-[hsl(210,72%,25%)] pt-8 pb-4 relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:radial-gradient(white,transparent_85%)] opacity-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[hsl(148,41%,58%)]/10 via-transparent to-[hsl(210,72%,25%)]/10"></div>
       </div>
       
       <div className="container mx-auto px-4 relative">
@@ -26,22 +26,22 @@ const Footer = () => {
                   className="h-full w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
                 />
               </div>
-              <p className="text-sm text-white/70 max-w-md mb-3">
+              <p className="text-sm text-white/80 max-w-md mb-3">
                 Connect With Our Thinks.
               </p>
             </div>
             
             {/* Contact Info */}
             <div className="space-y-2 text-center lg:text-left">
-              <div className="flex items-center justify-center lg:justify-start gap-2 text-xs text-white/60">
+              <div className="flex items-center justify-center lg:justify-start gap-2 text-xs text-white/70">
                 <MapPin className="w-3 h-3 flex-shrink-0" />
                 <span>Jl. Turus Asri IV No. 6, Bulusan, Kec. Tembalang, Kota Semarang, Jawa Tengah 50277</span>
               </div>
-              <div className="flex items-center justify-center lg:justify-start gap-2 text-xs text-white/60">
+              <div className="flex items-center justify-center lg:justify-start gap-2 text-xs text-white/70">
                 <Phone className="w-3 h-3 flex-shrink-0" />
                 <span>+62 8127-6253-242</span>
               </div>
-              <div className="flex items-center justify-center lg:justify-start gap-2 text-xs text-white/60">
+              <div className="flex items-center justify-center lg:justify-start gap-2 text-xs text-white/70">
                 <Mail className="w-3 h-3 flex-shrink-0" />
                 <span>omahiot@gmail.com</span>
               </div>
@@ -51,21 +51,21 @@ const Footer = () => {
             <div className="flex justify-center lg:justify-start gap-4 pt-2">
               <a 
                 href="https://www.instagram.com/omahiot/" 
-                className="text-white/60 hover:text-white transition-all duration-300 hover:scale-110 transform"
+                className="text-white/70 hover:text-white transition-all duration-300 hover:scale-110 transform"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
                 href="https://www.linkedin.com/company/cv-omah-iot" 
-                className="text-white/60 hover:text-white transition-all duration-300 hover:scale-110 transform"
+                className="text-white/70 hover:text-white transition-all duration-300 hover:scale-110 transform"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
                <a 
                 href="https://www.youtube.com/@omahiot3953" 
-                className="text-white/60 hover:text-white transition-all duration-300 hover:scale-110 transform"
+                className="text-white/70 hover:text-white transition-all duration-300 hover:scale-110 transform"
                 aria-label="LinkedIn"
               >
                 <Youtube className="w-5 h-5" />
@@ -79,7 +79,7 @@ const Footer = () => {
             {/* Map Container with enhanced styling */}
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-lg blur-sm group-hover:blur-none transition-all duration-300"></div>
-              <div className="relative bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 hover:border-white/30 transition-all duration-300">
+              <div className="relative bg-white/15 backdrop-blur-sm rounded-lg overflow-hidden border border-white/30 hover:border-white/50 transition-all duration-300">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.677076283!2d110.4445869!3d-7.057509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708ea05820d3dd%3A0x16c41b874ec723a9!2sJl.+Turus+Asri+IV+No.6%2C+Bulusan%2C+Kec.+Tembalang%2C+Kota+Semarang%2C+Jawa+Tengah+50277!5e0!3m2!1sid!2sid!4v1691234567890!5m2!1sid!2sid"
                   width="50%"
@@ -103,7 +103,7 @@ const Footer = () => {
                 href="https://maps.app.goo.gl/eDAVoRHqWmoYPwfb6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3 py-2 bg-white/10 hover:bg-white/20 text-white rounded-md transition-all duration-300 hover:scale-105 backdrop-blur-sm border border-white/20"
+                className="inline-flex items-center gap-2 px-3 py-2 bg-white/15 hover:bg-white/25 text-white rounded-md transition-all duration-300 hover:scale-105 backdrop-blur-sm border border-white/30"
               >
                 <MapPin className="w-3 h-3" />
                 <span className="text-xs font-medium">Buka di Google Maps</span>
@@ -114,8 +114,8 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="pt-4 mt-4 relative">
-          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-          <p className="text-center text-xs text-white/60 hover:text-white/80 transition-colors duration-300">
+          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+          <p className="text-center text-xs text-white/70 hover:text-white/90 transition-colors duration-300">
             © {currentYear} <span className="font-medium text-white">OmahIoT</span>. All rights reserved.
           </p>
         </div>
