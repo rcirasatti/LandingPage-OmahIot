@@ -1,7 +1,11 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
 
-const ProjectsSection = ({ activeFilter, setActiveFilter, filteredProjects }) => {
+const ProjectsSection = ({
+  activeFilter,
+  setActiveFilter,
+  filteredProjects,
+}) => {
   return (
     <section
       id="projects"
@@ -11,7 +15,7 @@ const ProjectsSection = ({ activeFilter, setActiveFilter, filteredProjects }) =>
         <div className="absolute inset-0 opacity-[0.03] pattern-grid [mask-image:linear-gradient(0deg,transparent,black,transparent)]" />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
       </div>
-      
+
       <div className="container mx-auto px-4 relative">
         <div className="max-w-3xl mx-auto text-center mb-10">
           <div className="relative inline-block mb-4">
@@ -24,34 +28,34 @@ const ProjectsSection = ({ activeFilter, setActiveFilter, filteredProjects }) =>
           <p className="text-xl text-gray-600 leading-relaxed mt-6 mb-10">
             Explore our innovative solutions across various domains
           </p>
-          
+
           {/* Filter Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <button 
+            <button
               onClick={() => setActiveFilter("all")}
               className={`px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeFilter === "all" 
-                  ? "bg-[#2C3A2F] text-white shadow-lg" 
+                activeFilter === "all"
+                  ? "bg-[#2C3A2F] text-white shadow-lg"
                   : "bg-white hover:bg-[#4A6741]/5 border border-[#2C3A2F]/10 hover:border-[#4A6741]/30 shadow-sm hover:shadow"
               }`}
             >
               All Projects
             </button>
-            <button 
+            <button
               onClick={() => setActiveFilter("IoT Solution")}
               className={`px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeFilter === "IoT Solution" 
-                  ? "bg-[#2C3A2F] text-white shadow-lg" 
+                activeFilter === "IoT Solution"
+                  ? "bg-[#2C3A2F] text-white shadow-lg"
                   : "bg-white hover:bg-[#4A6741]/5 border border-[#2C3A2F]/10 hover:border-[#4A6741]/30 shadow-sm hover:shadow"
               }`}
             >
               IoT Solutions
             </button>
-            <button 
+            <button
               onClick={() => setActiveFilter("Digital Solution")}
               className={`px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeFilter === "Digital Solution" 
-                  ? "bg-[#2C3A2F] text-white shadow-lg" 
+                activeFilter === "Digital Solution"
+                  ? "bg-[#2C3A2F] text-white shadow-lg"
                   : "bg-white hover:bg-[#4A6741]/5 border border-[#2C3A2F]/10 hover:border-[#4A6741]/30 shadow-sm hover:shadow"
               }`}
             >
@@ -59,7 +63,7 @@ const ProjectsSection = ({ activeFilter, setActiveFilter, filteredProjects }) =>
             </button>
           </div>
         </div>
-        
+
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 max-w-7xl mx-auto">
           {filteredProjects.map((project, index) => (
             <div
@@ -68,7 +72,7 @@ const ProjectsSection = ({ activeFilter, setActiveFilter, filteredProjects }) =>
             >
               {/* Top decoration line */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#2C3A2F] to-[#4A6741] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-              
+
               <div className="p-4">
                 <div className="relative mb-4 rounded-xl overflow-hidden bg-gradient-to-tr from-[#2C3A2F]/40 via-[#4A6741]/35 to-primary/30 shadow-md aspect-square">
                   <img
@@ -87,8 +91,8 @@ const ProjectsSection = ({ activeFilter, setActiveFilter, filteredProjects }) =>
                 <p className="text-sm text-gray-600 mb-4">
                   {project.description}
                 </p>
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="inline-flex items-center text-sm font-medium text-[#4A6741] hover:text-[#2C3A2F] transition-colors group-hover:underline"
                 >
                   Learn more

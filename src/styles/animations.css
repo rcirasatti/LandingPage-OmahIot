@@ -93,8 +93,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%); /* Exactly half to ensure perfect loop */
-  }
+    transform: translateX(-50%); }
 }
 
 .animate-scroll-slow {

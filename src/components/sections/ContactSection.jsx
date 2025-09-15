@@ -14,12 +14,10 @@ const ContactSection = () => {
 
       <div className="container mx-auto px-4 relative">
         <div className="max-w-xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-white">
-            Contact Us
-          </h2>
+          <h2 className="text-4xl font-bold mb-6 text-white">Contact Us</h2>
           <p className="text-lg text-white/90 leading-relaxed">
-            Tertarik dengan layanan kami? Hubungi kami sekarang untuk
-            konsultasi gratis dan temukan solusi terbaik untuk bisnis Anda.
+            Tertarik dengan layanan kami? Hubungi kami sekarang untuk konsultasi
+            gratis dan temukan solusi terbaik untuk bisnis Anda.
           </p>
         </div>
 

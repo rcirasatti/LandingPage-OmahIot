@@ -29,14 +29,12 @@ const ClientsSection = ({ logos }) => {
           </p>
         </div>
 
-        {/* Logo Grid with Animation - Infinity Scrolling */}
+        {/* Logo Grid with Animation */}
         <div className="relative mx-auto max-w-6xl px-4">
-          {/* Gradient overlays for smooth fade effect */}
           <div className="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-[#f8f9fa] via-[#f8f9fa]/90 to-transparent z-10 pointer-events-none"></div>
           <div className="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-[#f8f9fa] via-[#f8f9fa]/90 to-transparent z-10 pointer-events-none"></div>
 
           <div className="overflow-hidden relative py-12 bg-white/40 rounded-2xl shadow-sm border border-white/20 transition-all duration-500 hover:shadow-lg hover:bg-white/60">
-            {/* Single row - infinity scrolling */}
             <div className="scroll-container hover:pause-animation">
               <div className="flex logos-slide animate-infinite-scroll">
                 {logos.map((logo, index) => (

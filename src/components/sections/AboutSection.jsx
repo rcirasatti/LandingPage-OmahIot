@@ -1,7 +1,7 @@
 import React from "react";
 
 const AboutSection = () => {
-  return (
+return (
     <section
       id="about"
       className="py-24 bg-gradient-to-b from-background via-card to-background relative overflow-hidden"
